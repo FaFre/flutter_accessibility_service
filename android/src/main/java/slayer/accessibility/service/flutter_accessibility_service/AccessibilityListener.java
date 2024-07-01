@@ -150,7 +150,7 @@ public class AccessibilityListener extends AccessibilityService {
             windowInfo = node.getWindow();
             nested.put("mapId", mapId);
             nested.put("nodeId", node.getViewIdResourceName());
-            nested.put("capturedText", node.getText());
+            nested.put("capturedText", node.getText().toString());
             nested.put("screenBounds", getBoundingPoints(rect));
             nested.put("isClickable", node.isClickable());
             nested.put("isScrollable", node.isScrollable());
